@@ -1,6 +1,6 @@
-package riovlev.aop.gradle.example;
+package riovlev.aop.gradle.example.app;
 
-import riovlev.aop.gradle.example.annotations.JLog;
+import riovlev.aop.gradle.example.aspect.JLog;
 
 /**
  * @author Roman Iovlev

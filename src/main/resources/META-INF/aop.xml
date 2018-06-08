@@ -2,7 +2,7 @@
 <aspectj>
     <!-- place all aspects here -->
     <aspects>
-        <aspect name="riovlev.aop.gradle.example.ExampleAspect"/>
+        <aspect name="riovlev.aop.gradle.example.aspect.ActionAspect"/>
     </aspects>
     <weaver options="-verbose -showWeaveInfo">
     </weaver>

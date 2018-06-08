@@ -1,4 +1,4 @@
-package riovlev.aop.gradle.example.annotations;
+package riovlev.aop.gradle.example.aspect;
 
 import java.lang.annotation.*;
 

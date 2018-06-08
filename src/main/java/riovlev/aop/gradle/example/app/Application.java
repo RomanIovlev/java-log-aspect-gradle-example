@@ -1,4 +1,4 @@
-package riovlev.aop.gradle.example;
+package riovlev.aop.gradle.example.app;
 
 /**
  * @author Roman Iovlev
