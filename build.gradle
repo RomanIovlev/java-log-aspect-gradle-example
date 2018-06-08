@@ -1,0 +1,31 @@
+group 'riovlev.aop.gradle.example.aspects'
+version '1.0'
+
+apply plugin: 'java'
+
+apply plugin: 'application'
+mainClassName = "riovlev.aop.gradle.example.Application"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    aspectjweaver
+}
+
+dependencies {
+    compile "org.springframework:spring-webmvc:4.+"
+    compile "org.springframework:spring-aop:4.+"
+    compile "org.springframework.boot:spring-boot-starter-web:1.+"
+    compile "org.aspectj:aspectjrt:1.+"
+    compile "org.slf4j:slf4j-api:1.+"
+    aspectjweaver "org.aspectj:aspectjweaver:1.+"
+    runtime configurations.aspectjweaver.dependencies
+}
+
+applicationDefaultJvmArgs = [
+        "-javaagent:${configurations.aspectjweaver.asPath}"
+]
